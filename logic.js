@@ -26,13 +26,13 @@ function update() {
 function main() {
 	enable_debug('debug');
 	allegro_init_all("game_canvas", 640, 480);
-	buzz=load_bmp('buzz.png');
-	splat=load_bmp('splat.png');
-	death=load_bmp("window.png");
-	weapon=load_bmp('weapon.png');
-	weapon2=load_bmp('weapon2.png');
-	miss = load_sample("miss.mp3");
-	hit = load_sample("hit.mp3");
+	buzz=load_bmp('./assets/buzz.png');
+	splat=load_bmp('./assets/splat.png');
+	death=load_bmp("./assets/window.png");
+	weapon=load_bmp('./assets/weapon.png');
+	weapon2=load_bmp('./assets/weapon2.png');
+	miss = load_sample("./assets/miss.mp3");
+	hit = load_sample("./assets/hit.mp3");
 	hide_mouse();
 	ready(function(){
 		loop(function(){
